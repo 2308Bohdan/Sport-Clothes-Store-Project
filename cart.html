@@ -1,0 +1,75 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping cart</title>
+        <link rel="icon" href="img/icon-title.svg">
+    </head>
+    <body>
+        <header>
+            <h1>Shopping cart</h1>
+            <div class="buttons">
+                <button>X</button>
+            </div>
+        </header>
+        <main>
+            <h2>Products</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img src="#" alt="Reebok Workout Shorts" width="20">
+                    </td>
+                    <td>Reebok Workout Shorts</td>
+                    <td>
+                        <input type="number" value="2" min="1">
+                    </td>
+                    <td>$25,00USD</td>
+                    <td>🗑</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="#" alt="Puma Fitness Shoes in Grey" width="20">
+                    </td>
+                    <td>Puma Fitness Shoes in Grey</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td>$60,00USD</td>
+                    <td>🗑</td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="2">Total: $110,00USD</td>
+                </tr>
+            </table>
+            <h2>PLACE AN ORDER</h2>
+            <form action="https://formspree.io/f/xqkwkqew" method="POST">
+                <label>
+                    Name*
+                    <input type="text" name="user-name" placeholder="Your name" required>
+                </label>
+                <br>
+                <label>
+                    Email*
+                    <input type="email" name="user-email" placeholder="Your email address" required>
+                </label>
+                </br>
+                <label>
+                    Phone*
+                    <input type="tel" name="user-number" placeholder="Your phone" required>
+                </label>
+                <br>
+                <label>
+                    Comment
+                    <textarea name="comment" id="" cols="30" rows="4">
+                    </textarea>
+                </label>
+                <br>
+                <input type="submit" value="order">
+            </form>
+            <a href="index.html">Continue shopping</a>
+        </main>
+    </body>
+
+</html>
